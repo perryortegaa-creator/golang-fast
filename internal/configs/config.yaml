@@ -1,0 +1,7 @@
+service:
+  port: ":9999"
+  secretJWT: "fastcampustest"
+
+database:
+  # Untuk WSL + MySQL di Docker Desktop (Windows), override lewat env DATABASE_DSN (host = IP Windows, bukan 127.0.0.1).
+  dataSourceName: "root:superSecret@tcp(127.0.0.1:3306)/belajarfast?parseTime=true"
